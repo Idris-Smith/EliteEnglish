@@ -5,41 +5,43 @@ export default function TermsAndConditions() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section id="terms" className="py-20 bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100 relative overflow-hidden">
-      <div className="absolute top-20 left-0 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-0 w-96 h-96 bg-sky-300/20 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
-      <div className="container mx-auto px-4 max-w-5xl relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] rounded-2xl mb-6 shadow-xl">
-            <FileText className="w-10 h-10 text-white" />
-          </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">Terms & Conditions</h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-[#1E88C7] to-[#2BA3DB] mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600">
-            Please read these terms carefully before enrolling
-          </p>
-        </div>
+    <section id="terms" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100 rounded-3xl shadow-2xl p-8 md:p-12 relative overflow-hidden">
+          <div className="absolute top-20 left-0 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-0 w-96 h-96 bg-sky-300/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
+          <div className="relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] rounded-2xl mb-6 shadow-xl">
+                <FileText className="w-10 h-10 text-white" />
+              </div>
+              <h2 className="text-5xl font-bold text-gray-900 mb-4">Terms & Conditions</h2>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-[#1E88C7] to-[#2BA3DB] mx-auto rounded-full mb-6"></div>
+              <p className="text-xl text-gray-600">
+                Please read these terms carefully before enrolling
+              </p>
+            </div>
 
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full bg-white rounded-2xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all mb-8 flex items-center justify-between group"
-        >
-          <span className="text-xl font-bold text-gray-900 group-hover:text-[#1E88C7] transition-colors">
-            {isExpanded ? 'Hide Terms & Conditions' : 'View Terms & Conditions'}
-          </span>
-          <ChevronDown
-            className={`w-6 h-6 text-[#1E88C7] transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
-          />
-        </button>
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="w-full bg-white rounded-2xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all mb-8 flex items-center justify-between group"
+            >
+              <span className="text-xl font-bold text-gray-900 group-hover:text-[#1E88C7] transition-colors">
+                {isExpanded ? 'Hide Terms & Conditions' : 'View Terms & Conditions'}
+              </span>
+              <ChevronDown
+                className={`w-6 h-6 text-[#1E88C7] transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+              />
+            </button>
 
-        <div className={`space-y-8 transition-all duration-500 overflow-hidden ${isExpanded ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+            <div className={`space-y-8 transition-all duration-500 overflow-hidden ${isExpanded ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#1E88C7] p-3 rounded-xl flex-shrink-0">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Contract Terms</h3>
                 <div className="space-y-3 text-gray-700 leading-relaxed">
                   <p>
@@ -53,15 +55,15 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#2BA3DB] p-3 rounded-xl flex-shrink-0">
                 <AlertCircle className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Payment & Refund Policy</h3>
                 <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-4">
                   <p className="text-red-800 font-semibold">
@@ -80,15 +82,15 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#4DC4EC] p-3 rounded-xl flex-shrink-0">
                 <Clock className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Attendance & Late-Coming</h3>
                 <div className="space-y-4">
                   <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-lg">
@@ -109,15 +111,15 @@ export default function TermsAndConditions() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#1E88C7] p-3 rounded-xl flex-shrink-0">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Absence Due to Sickness</h3>
                 <div className="space-y-3 text-gray-700 leading-relaxed">
                   <p>
@@ -134,15 +136,15 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#2BA3DB] p-3 rounded-xl flex-shrink-0">
                 <Bus className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Transport Terms</h3>
                 <div className="space-y-3 text-gray-700 leading-relaxed">
                   <p>
@@ -162,15 +164,15 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div className="flex items-start space-x-4 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start space-x-4 mb-6">
               <div className="bg-[#4DC4EC] p-3 rounded-xl flex-shrink-0">
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <div>
+                  <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Travelling & Class Postponement</h3>
                 <div className="space-y-3 text-gray-700 leading-relaxed">
                   <p>
@@ -187,11 +189,11 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <div>
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Discounts</h3>
               <div className="space-y-3 text-gray-700 leading-relaxed">
                 <p>
@@ -201,10 +203,10 @@ export default function TermsAndConditions() {
                   The Academy reserves the right to not offer discounts for certain courses, especially if maximum discounts are already included in package prices. This is at the sole discretion of the Academy.
                 </p>
               </div>
-            </div>
-          </div>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] rounded-2xl shadow-2xl p-10 text-white">
+              <div className="bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] rounded-2xl shadow-2xl p-10 text-white">
             <h3 className="text-2xl font-bold mb-4 text-center">Questions About Our Terms?</h3>
             <p className="text-center text-lg text-white/90 mb-6">
               We're here to help clarify any questions you may have about our policies.
@@ -225,7 +227,9 @@ export default function TermsAndConditions() {
                 WhatsApp Us
               </a>
             </div>
-          </div>
+              </div>
+                </div>
+              </div>
         </div>
       </div>
     </section>
