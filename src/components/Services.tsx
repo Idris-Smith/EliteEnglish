@@ -10,8 +10,9 @@ export default function Services() {
 
   return (
     <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#1E88C7]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2BA3DB]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#1E88C7]/5 rounded-full blur-3xl floating"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#2BA3DB]/5 rounded-full blur-3xl floating-delayed"></div>
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#4DC4EC]/3 rounded-full blur-3xl pulse-slow"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
@@ -27,6 +28,7 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-100">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#1E88C7]/10 to-transparent rounded-bl-full"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#2BA3DB]/5 to-transparent rounded-tr-full"></div>
 
               <div className="p-6 sm:p-10 relative z-10">
                 <div className="mb-6">
@@ -81,6 +83,7 @@ export default function Services() {
 
             <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-100">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#2BA3DB]/10 to-transparent rounded-bl-full"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#4DC4EC]/5 to-transparent rounded-tr-full"></div>
 
               <div className="p-6 sm:p-10 relative z-10">
                 <div className="mb-6">

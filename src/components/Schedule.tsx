@@ -5,8 +5,10 @@ export default function Schedule() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section id="schedule" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="schedule" className="py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      <div className="absolute top-20 right-1/4 w-72 h-72 bg-[#1E88C7]/5 rounded-full blur-3xl floating"></div>
+      <div className="absolute bottom-20 left-1/4 w-80 h-80 bg-[#2BA3DB]/5 rounded-full blur-3xl floating-delayed"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Class Schedule</h2>
           <div className="w-24 h-1 bg-[#1E88C7] mx-auto mb-6"></div>

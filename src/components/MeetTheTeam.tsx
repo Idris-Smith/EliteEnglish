@@ -1,7 +1,9 @@
 export default function MeetTheTeam() {
   return (
-    <section id="meet-the-team" className="py-20 bg-white relative">
-      <div className="container mx-auto px-4">
+    <section id="meet-the-team" className="py-20 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
+      <div className="absolute top-1/4 left-10 w-80 h-80 bg-[#1E88C7]/5 rounded-full blur-3xl pulse-slow"></div>
+      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-[#2BA3DB]/5 rounded-full blur-3xl pulse-slow"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Meet the Team</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#1E88C7] to-[#2BA3DB] mx-auto rounded-full"></div>

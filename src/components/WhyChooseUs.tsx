@@ -2,8 +2,10 @@ import { CheckCircle } from 'lucide-react';
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-20 bg-white relative">
-      <div className="container mx-auto px-4">
+    <section id="why-choose-us" className="py-20 bg-gradient-to-b from-white via-gray-50/30 to-white relative overflow-hidden">
+      <div className="absolute top-20 left-1/4 w-96 h-96 bg-[#1E88C7]/5 rounded-full blur-3xl pulse-slow"></div>
+      <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-[#2BA3DB]/5 rounded-full blur-3xl pulse-slow"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <span className="text-[#1E88C7] font-semibold text-sm uppercase tracking-wider">Our Difference</span>
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6">Why Choose Elite English?</h2>

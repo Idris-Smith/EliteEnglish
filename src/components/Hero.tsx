@@ -74,28 +74,40 @@ export default function Hero() {
 
           <div className="flex-1 w-full lg:w-auto">
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:-rotate-2">
-                <Users className="w-12 h-12 mb-4 text-white" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Small Classes</h3>
-                <p className="text-white/90 text-sm">Max 8 students for personalized attention</p>
+              <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:-rotate-2 group">
+                <div className="absolute -inset-1 bg-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative">
+                  <Users className="w-12 h-12 mb-4 text-white" />
+                  <h3 className="text-xl font-semibold mb-2 text-white">Small Classes</h3>
+                  <p className="text-white/90 text-sm">Max 8 students for personalized attention</p>
+                </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:rotate-2 mt-8">
-                <GraduationCap className="w-12 h-12 mb-4 text-white" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Expert Teachers</h3>
-                <p className="text-white/90 text-sm">Years of international experience</p>
+              <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:rotate-2 mt-8 group">
+                <div className="absolute -inset-1 bg-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative">
+                  <GraduationCap className="w-12 h-12 mb-4 text-white" />
+                  <h3 className="text-xl font-semibold mb-2 text-white">Expert Teachers</h3>
+                  <p className="text-white/90 text-sm">Years of international experience</p>
+                </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:rotate-2 -mt-8">
-                <Globe className="w-12 h-12 mb-4 text-white" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Cultural Immersion</h3>
-                <p className="text-white/90 text-sm">Full South African experience</p>
+              <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:rotate-2 -mt-8 group">
+                <div className="absolute -inset-1 bg-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative">
+                  <Globe className="w-12 h-12 mb-4 text-white" />
+                  <h3 className="text-xl font-semibold mb-2 text-white">Cultural Immersion</h3>
+                  <p className="text-white/90 text-sm">Full South African experience</p>
+                </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:-rotate-2">
-                <MapPin className="w-12 h-12 mb-4 text-white" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Transport Included</h3>
-                <p className="text-white/90 text-sm">Door-to-door service available</p>
+              <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all transform hover:scale-105 hover:-rotate-2 group">
+                <div className="absolute -inset-1 bg-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative">
+                  <MapPin className="w-12 h-12 mb-4 text-white" />
+                  <h3 className="text-xl font-semibold mb-2 text-white">Transport Included</h3>
+                  <p className="text-white/90 text-sm">Door-to-door service available</p>
+                </div>
               </div>
             </div>
           </div>

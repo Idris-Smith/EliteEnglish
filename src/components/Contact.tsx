@@ -2,8 +2,10 @@ import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#1E88C7]/5 rounded-full blur-3xl floating"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#2BA3DB]/5 rounded-full blur-3xl floating-delayed"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <div className="w-24 h-1 bg-[#1E88C7] mx-auto mb-6"></div>
