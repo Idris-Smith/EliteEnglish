@@ -1,4 +1,4 @@
-import { Clock, ChevronDown } from 'lucide-react';
+import { Clock, ChevronDown, Calendar, Users, BookOpen, Award } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Schedule() {
@@ -17,14 +17,64 @@ export default function Schedule() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto relative">
+          <div className="absolute -top-8 left-0 w-16 h-16 bg-[#1E88C7]/10 rounded-2xl rotate-12 blur-sm"></div>
+          <div className="absolute -top-4 right-10 w-12 h-12 bg-[#2BA3DB]/10 rounded-full blur-sm"></div>
+          <div className="absolute top-20 -left-8 w-20 h-20 bg-[#4DC4EC]/10 rounded-2xl -rotate-12 blur-sm"></div>
+          <div className="absolute top-32 -right-6 w-14 h-14 bg-[#1E88C7]/10 rounded-full blur-sm"></div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all transform hover:-translate-y-1">
+              <div className="flex items-center space-x-4">
+                <div className="bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] p-3 rounded-xl">
+                  <Calendar className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-gray-900">4</p>
+                  <p className="text-sm text-gray-600">Daily Sessions</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all transform hover:-translate-y-1">
+              <div className="flex items-center space-x-4">
+                <div className="bg-gradient-to-br from-[#2BA3DB] to-[#4DC4EC] p-3 rounded-xl">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-gray-900">8</p>
+                  <p className="text-sm text-gray-600">Max Students</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all transform hover:-translate-y-1">
+              <div className="flex items-center space-x-4">
+                <div className="bg-gradient-to-br from-[#4DC4EC] to-[#1E88C7] p-3 rounded-xl">
+                  <Clock className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-gray-900">2hrs</p>
+                  <p className="text-sm text-gray-600">Per Session</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="w-full bg-white rounded-2xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all mb-8 flex items-center justify-between group"
+            className="w-full bg-white rounded-2xl shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-all mb-8 flex items-center justify-between group relative overflow-hidden"
           >
-            <span className="text-xl font-bold text-gray-900 group-hover:text-[#1E88C7] transition-colors">
-              {isExpanded ? 'Hide Schedule' : 'View Schedule'}
-            </span>
+            <div className="absolute top-0 left-0 w-32 h-32 bg-[#1E88C7]/5 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#2BA3DB]/5 rounded-full blur-2xl translate-x-1/2 translate-y-1/2"></div>
+            <div className="relative flex items-center space-x-4">
+              <div className="bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] p-4 rounded-xl">
+                <BookOpen className="w-6 h-6 text-white" />
+              </div>
+              <span className="text-xl font-bold text-gray-900 group-hover:text-[#1E88C7] transition-colors">
+                {isExpanded ? 'Hide Schedule' : 'View Schedule'}
+              </span>
+            </div>
             <ChevronDown
               className={`w-6 h-6 text-[#1E88C7] transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
             />
