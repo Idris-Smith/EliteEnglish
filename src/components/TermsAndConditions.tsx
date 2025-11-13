@@ -5,10 +5,10 @@ export default function TermsAndConditions() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section id="terms" className="py-20 bg-gray-50 relative overflow-hidden">
-      <div className="absolute top-20 left-0 w-72 h-72 bg-[#1E88C7]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#2BA3DB]/5 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#4DC4EC]/5 rounded-full blur-3xl"></div>
+    <section id="terms" className="py-20 bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100 relative overflow-hidden">
+      <div className="absolute top-20 left-0 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-0 w-96 h-96 bg-sky-300/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#1E88C7] to-[#2BA3DB] rounded-2xl mb-6 shadow-xl">
