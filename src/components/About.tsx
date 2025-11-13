@@ -5,8 +5,7 @@ export default function About() {
     <section id="about-us" className="py-20 bg-white relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-[#1E88C7] font-semibold text-sm uppercase tracking-wider">Our Story</span>
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6">About Us</h2>
+          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">About Us</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#1E88C7] to-[#2BA3DB] mx-auto rounded-full"></div>
         </div>
 
@@ -20,7 +19,7 @@ export default function About() {
                 <Target className="w-16 h-16 mb-6" />
                 <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
                 <p className="text-lg leading-relaxed text-white/95">
-                  Elite English exists to offer specialized tuition for 2nd language learners, helping them acquire, develop, and perfect their English skills through personalized attention and expert guidance.
+                  Elite English exists to offer specialized tuition for 2nd language learners (ESL — English as a Second Language), helping them acquire, develop, and perfect their English skills through personalized attention and expert guidance.
                 </p>
                 <div className="mt-8 pt-8 border-t border-white/20">
                   <p className="text-white/90 italic">
@@ -67,7 +66,7 @@ export default function About() {
                   <div>
                     <h3 className="text-2xl font-semibold text-gray-900 mb-3">Perfect Location</h3>
                     <p className="text-gray-700 leading-relaxed">
-                      Located in leafy Diep River, just outside Cape Town's City Bowl. Experience a relaxed, vibrant atmosphere away from the hustle, perfect for focused learning.
+                      Located in leafy Diep River, just outside Cape Town's City Bowl. Experience a relaxed, vibrant atmosphere away from the hustle and bustle, perfect for focused learning.
                     </p>
                   </div>
                 </div>
