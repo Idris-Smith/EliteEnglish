@@ -3,8 +3,7 @@ export default function MeetTheTeam() {
     <section id="meet-the-team" className="py-20 bg-white relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-[#1E88C7] font-semibold text-sm uppercase tracking-wider">Leadership</span>
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6">Meet Our Team</h2>
+          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Meet the Team</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#1E88C7] to-[#2BA3DB] mx-auto rounded-full"></div>
         </div>
 
